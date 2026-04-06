@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOON — Brand Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<!-- "View ↗" pill — 이미지 hover 시 마우스를 따라다니는 버튼 -->
+<div class="view-cursor" id="viewCursor">View ↗</div>
+
+<nav>
+  <a href="#" class="nav-logo">YOON</a>
+  <ul class="nav-links">
+    <li><a href="#works">Works</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>YOON</span><span class="sep">·</span>
+    <span>Brand Designer</span><span class="sep">·</span>
+    <span>Visual Identity</span><span class="sep">·</span>
+    <span>Typography</span><span class="sep">·</span>
+    <span>Editorial</span><span class="sep">·</span>
+    <span>Packaging</span><span class="sep">·</span>
+    <span>YOON</span><span class="sep">·</span>
+    <span>Brand Designer</span><span class="sep">·</span>
+    <span>Visual Identity</span><span class="sep">·</span>
+    <span>Typography</span><span class="sep">·</span>
+    <span>Editorial</span><span class="sep">·</span>
+    <span>Packaging</span><span class="sep">·</span>
+  </div>
+</div>
+
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Brand Designer · Visual Identity</p>
+    <h1 class="hero-initials">YO<br><em>ON</em>.</h1>
+    <p class="hero-desc">I build visual systems that connect people, culture, and ideas translating stories into strategic brand languages that shape perception.</p>
+  </div>
+  <div class="hero-right">
+    <a href="mailto:yoonisign@gmail.com" class="hero-email">yoonisign@gmail.com</a>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     WORKS — Stack layout
+     각 프로젝트 = 얇은 메타 row + full-width 이미지 패널
+     이미지 교체: .stack-[name] { background-image: url('...'); background-size: cover; }
+     ==================================================== -->
+<section id="works">
+  <div class="section-label">Selected Works</div>
+
+  <div class="stack-blocks">
+
+    <!-- 01 · Cannes ─────────────────────── -->
+    <a class="stack-row" href="cannes.html">
+      <span class="stack-num">01</span>
+      <span class="stack-name">Cannes</span>
+      <span class="stack-desc">Film festival rebrand — cultural bridge through cinema</span>
+      <span class="stack-type">Branding</span>
+      <span class="stack-arrow">↗</span>
+    </a>
+    <div class="stack-image stack-cannes">
+      <span class="stack-img-label">CANNES</span>
+    </div>
+
+    <!-- 02 · Tatox ──────────────────────── -->
+    <a class="stack-row" href="tatox.html">
+      <span class="stack-num">02</span>
+      <span class="stack-name">Tatox</span>
+      <span class="stack-desc">Reframing tattoo culture from stigma to identity</span>
+      <span class="stack-type">Campaign</span>
+      <span class="stack-arrow">↗</span>
+    </a>
+    <div class="stack-image stack-tatox">
+      <span class="stack-img-label">TATOX</span>
+    </div>
+
+    <!-- 03 · HV.Inc ─────────────────────── -->
+    <a class="stack-row" href="hvinc.html">
+      <span class="stack-num">03</span>
+      <span class="stack-name">HV.Inc</span>
+      <span class="stack-desc">Online hate as a contagious social virus</span>
+      <span class="stack-type">Branding · Web</span>
+      <span class="stack-arrow">↗</span>
+    </a>
+    <div class="stack-image stack-hvinc">
+      <span class="stack-img-label">HV.INC</span>
+    </div>
+
+    <!-- 04 · Oldboy ─────────────────────── -->
+    <a class="stack-row" href="oldboy.html">
+      <span class="stack-num">04</span>
+      <span class="stack-name">Oldboy</span>
+      <span class="stack-desc">Translating film into a script-based publication</span>
+      <span class="stack-type">Editorial</span>
+      <span class="stack-arrow">↗</span>
+    </a>
+    <div class="stack-image stack-oldboy">
+      <span class="stack-img-label">OLDBOY</span>
+    </div>
+
+    <!-- 05 · Upcoming ───────────────────── -->
+    <div class="stack-row stack-row--upcoming" aria-disabled="true">
+      <span class="stack-num">05</span>
+      <span class="stack-name">Upcoming</span>
+      <span class="stack-desc">Details coming soon</span>
+      <span class="stack-type">—</span>
+      <span class="stack-arrow" aria-hidden="true"></span>
+    </div>
+    <div class="stack-image stack-freewill">
+      <span class="stack-img-label">UPCOMING</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-left reveal">
+    <div class="section-label">About</div>
+    <h2 class="about-big">Design as a<br><em>bridge</em> between<br>culture &amp; ideas.</h2>
+    <p class="about-body">Born in Korea, studying at RISD. I design brand identities and visual systems combining typography, narrative thinking, and cultural perspective to build work that connects.</p>
+    <a href="assets/gyuho-yoon-cv.pdf" download class="cv-download">
+      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 1v7M3 5.5l3 3 3-3M1 10h10"/>
+      </svg>
+      Download CV
+    </a>
+    <div class="skills-grid">
+      <span class="skill-tag">Brand Identity</span>
+      <span class="skill-tag">Typography</span>
+      <span class="skill-tag">Editorial</span>
+      <span class="skill-tag">Packaging</span>
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Visual Systems</span>
+      <span class="skill-tag">Photoshop</span>
+      <span class="skill-tag">Illustrator</span>
+      <span class="skill-tag">After Effects</span>
+      <span class="skill-tag">InDesign</span>
+      <span class="skill-tag">HTML · CSS · JS</span>
+    </div>
+  </div>
+  <div class="about-right reveal">
+    <div class="section-label">Info</div>
+    <ul class="about-facts">
+      <li>
+        <span class="fact-label">Education</span>
+        <span class="fact-value">RISD · UAL</span>
+      </li>
+      <li>
+        <span class="fact-label">Based</span>
+        <span class="fact-value">Providence, RI</span>
+      </li>
+      <li>
+        <span class="fact-label">Available</span>
+        <span class="fact-value">Open to work</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label" style="justify-content:center;">Let's work together</div>
+  <h2 class="contact-big reveal">Let's<br><em>create</em><br>together.</h2>
+  <a href="mailto:yoonisign@gmail.com" class="contact-email-link reveal">yoonisign@gmail.com</a>
+  <div class="contact-links reveal">
+    <a href="mailto:yoonisign@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/gyuho-yoon-520473291" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© <span id="year"></span> YOON</span>
+  <span class="footer-copy">Brand Designer · RISD</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
